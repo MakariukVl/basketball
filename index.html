@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework 9 - JS DOM Events</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="task1">
+      <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+      <template id="tmpl1">
+        <table class="coloration-table green fixed">
+          <tr>
+            <td class="white">Cell</td>
+            <td class="white">Cell</td>
+            <td class="white">Cell</td>
+          </tr>
+          <tr>
+            <td class="white">Cell</td>
+            <td class="white">Cell</td>
+            <td class="white" id="special">Special Cell</td>
+          </tr>
+          <tr>
+            <td class="white">Cell</td>
+            <td class="white">Cell</td>
+            <td class="white">Cell</td>
+          </tr>
+        </table>
+      </template>
+    </div>
+
+    <div id="task2">
+      <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+      <template id="tmpl2">
+        <div class="wrapper">
+          <form name="send-phone" id="form-phone" action="" novalidate>
+            <div class="field">
+              <input
+                type="text"
+                name="phone-number"
+                id="input-phone"
+                placeholder="Type phone number in format +380*********"
+              /><input type="submit" value="Send" disabled />
+            </div>
+          </form>
+        </div>
+      </template>
+    </div>
+
+    <div id="task3">
+      <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+      <template id="tmpl3">
+        <div class="wrapper">
+          <div id="field">
+            <img
+              src="./assets/ball.png"
+              alt="ball"
+              id="ball"
+              height="40"
+              width="40"
+            />
+          </div>
+          <div id="scoreboard">
+            <div id="team-a">Team A:<span id="team-a-score">0</span></div>
+            <div id="team-b">Team B:<span id="team-b-score">0</span></div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

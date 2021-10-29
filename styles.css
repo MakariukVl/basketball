@@ -1,0 +1,131 @@
+/* START: Task 1 Styles */
+.coloration-table {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+}
+.fixed {
+  table-layout: fixed;
+}
+.fixed td {
+  height: 100px;
+  width: 100px;
+}
+.coloration-table td {
+  text-align: center;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.white {
+  background-color: white;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+.wrapper {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+#input-phone {
+  width: 24em;
+  margin-left: 0;
+  padding-left: 1em;
+  border: 1px solid black;
+}
+#input-phone:focus {
+  outline: 1px solid black;
+}
+.success::before {
+  content: 'Data was successfully sent';
+  display: block;
+  padding: 0.5em 1em;
+  padding-right: 0;
+  font-size: 15pt;
+  color: white;
+  background-color: #080;
+  border: 1px solid #666;
+  margin-bottom: 0.5em;
+}
+.error #input-phone {
+  border-color: red;
+}
+.error #input-phone:focus {
+  outline: 1px solid red;
+}
+.error::before {
+  content: 'Type number does not follow format\0a+380*********';
+  display: block;
+  white-space: pre;
+  padding: 0.5em 1em;
+  padding-right: 0;
+  font-size: 15pt;
+  color: white;
+  background-color: #f88;
+  border: 1px solid #666;
+  margin-bottom: 0.5em;
+}
+.field input {
+  box-sizing: content-box;
+  height: 2.5em;
+  width: 3em;
+  margin-left: 0.8em;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+#field {
+  background-image: url(./assets/court.png);
+  background-size: 600px 330px;
+  width: 600px;
+  height: 330px;
+  position: relative;
+}
+#ball {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 280px;
+  top: 145px;
+  transition: left 1s ease-in-out 16ms, top 1s ease-in-out 16ms,
+    transform 1s ease-out 16ms;
+}
+#scoreboard {
+  position: relative;
+}
+#team-a {
+  position: absolute;
+  left: 5px;
+}
+#team-b {
+  position: absolute;
+  right: 5px;
+}
+.score-msg-a::after {
+  content: 'Team A score!';
+  color: darkblue;
+  font-size: 15pt;
+  text-align: center;
+  display: block;
+  padding: 0.5em 0;
+}
+.score-msg-b::after {
+  content: 'Team B score!';
+  color: red;
+  font-size: 15pt;
+  text-align: center;
+  display: block;
+  padding: 0.5em 0;
+}
+/* END: Task 3 Styles */
